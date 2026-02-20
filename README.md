@@ -3,7 +3,7 @@
 
 **Autor:** Matheus Rodrigues Silva Maia
 
-[INSIRA IMAGEM DE CAPA AQUI - Sugestão: Um print elegante do topo do Dashboard Streamlit mostrando os KPIs e o gráfico de Pareto]
+**LinkedIn:** https://www.linkedin.com/in/matheusrodriguestech/
 
 ## 1. Objetivo do Projeto
 
