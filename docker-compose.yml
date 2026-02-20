@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  postgres_db:
+    image: postgres:15-alpine
+    container_name: case_db_tax
+    environment:
+      POSTGRES_USER: case_user
+      POSTGRES_PASSWORD: case_password
+      POSTGRES_DB: case_analytics
+    ports:
+      - "5432:5432"
+    volumes:
+      # Mapeia os scripts SQL para serem executados na inicialização
+      - ./init_scripts:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U case_user -d case_analytics"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

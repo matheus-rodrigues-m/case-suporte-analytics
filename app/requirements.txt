@@ -1,0 +1,10 @@
+pandas
+sqlalchemy
+psycopg2-binary
+python-dotenv
+openpyxl
+faker
+streamlit
+plotly
+
+# pip install -r app/requirements.txt
